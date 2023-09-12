@@ -1,6 +1,13 @@
+module doggy_demo;
+
 import doggy;
+import std.stdio;
 
 void main()
 {
-	test();
+	auto ret = init();
+  if(ret == 1)
+  {
+    writeln("success!");
+  }
 }

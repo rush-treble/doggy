@@ -2,7 +2,6 @@
 	"fileVersion": 1,
 	"versions": {
 		"bindbc-loader": "1.1.2",
-		"bindbc-sdl": "1.4.2",
-		"doggy": {"path":".."}
+		"bindbc-sdl": "1.4.2"
 	}
 }
