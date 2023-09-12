@@ -1,0 +1,5 @@
+name "doggy"
+description "a game engine"
+authors "rush-treble"
+copyright "Copyright © 2023, rush-treble"
+license "MIT"
