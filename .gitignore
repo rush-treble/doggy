@@ -5,8 +5,10 @@ docs/
 /doggy
 doggy.so
 doggy.dylib
+libdoggy.dll
 doggy.dll
 doggy.a
+libdoggy.a
 doggy.lib
 doggy-test-*
 *.exe

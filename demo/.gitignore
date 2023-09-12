@@ -1,0 +1,16 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/doggy_demo
+doggy_demo.so
+doggy_demo.dylib
+doggy_demo.dll
+doggy_demo.a
+doggy_demo.lib
+doggy_demo-test-*
+*.exe
+*.pdb
+*.o
+*.obj
+*.lst

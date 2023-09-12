@@ -1,0 +1,6 @@
+name "doggy_demo"
+description "a doggy game engine demo"
+authors "rush-treble"
+copyright "Copyright © 2023, rush-treble"
+license "MIT"
+dependency "doggy" path=".."
