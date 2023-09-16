@@ -17,8 +17,34 @@ void main()
     {
         doggy.console.message("window created success!");
     }
-    
-    doggy.show_message("Hi", "test");
 
-    SDL_Delay(10000);
+    doggy.render.create();
+
+    bool quit = false;
+
+    while (!quit) {
+
+        SDL_Event e;
+
+        // Wait indefinitely for the next available event
+        SDL_WaitEvent(&e);
+
+        // User requests quit
+        if(e.type == SDL_QUIT)
+        {
+            quit = true;
+        }
+
+        // clear screen
+        doggy.draw.set_color(0, 0, 0, 0);
+        doggy.draw.clear();
+        
+        // draw rectangle
+        doggy.draw.set_color(255, 0, 0, 255);
+        doggy.draw.rectangle(0, 0, 50, 50);
+
+        doggy.render.present();
+
+        SDL_Delay(16);
+    }
 }
