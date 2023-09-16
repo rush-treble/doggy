@@ -17,6 +17,8 @@ void main()
     {
         doggy.console.message("window created success!");
     }
+    
+    doggy.show_message("Hi", "test");
 
     SDL_Delay(10000);
 }

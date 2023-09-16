@@ -3,8 +3,8 @@ module doggy;
 public import doggy.error;
 
 public static import window = doggy.window;
-
-public static import dev = doggy.dev;
+public static import console = doggy.console;
+public import doggy.message_box;
 
 import bindbc.sdl;
 import std.stdio;
