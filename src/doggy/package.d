@@ -1,15 +1,20 @@
 module doggy;
 
-import std.stdio;
-
 public import doggy.error;
+
+public static import window = doggy.window;
+
+public static import dev = doggy.dev;
+
+import bindbc.sdl;
+import std.stdio;
 
 int init()
 {
-    import bindbc.sdl;
-
+    // TODO: return some kind of error type (maybe an error enum?)
     try
     {
+        // Attempt to load SDL
         version (linux)
         {
             SDLSupport ret = loadSDL();
@@ -19,6 +24,7 @@ int init()
             SDLSupport ret = loadSDL("libs/sdl2.dll");
         }
 
+        // Check how loading SDL went
         if (ret != sdlSupport)
         {
             if (ret == SDLSupport.noLibrary)
@@ -34,8 +40,10 @@ int init()
     }
     catch (SdlLoadException e)
     {
+        // Loading SDL did not go well; return 0 for error
         return 0;
     }
 
+    // Success! Return 1
     return 1;
 }
