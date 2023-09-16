@@ -1,9 +1,19 @@
 module doggy.console;
 
 import std.stdio;
+import bindbc.sdl;
 
-// TODO: add time to the output
-void message(string text)
+void info(string text)
 {
-    writeln("[MSG]: " ~ text);
+    writeln("[INFO @ ", SDL_GetTicks(), "] ", text);
+}
+
+void warning(string text)
+{
+    writeln("[WARN @ ", SDL_GetTicks(), "] ", text);
+}
+
+void error(string text)
+{
+    writeln("[ERROR!!!!! @ ", SDL_GetTicks(), "] ", text);
 }
