@@ -46,6 +46,9 @@ int init()
         return 0;
     }
 
+    window.create("Doggy: An Engine", 800, 600);
+    render.create();
+
     // Success! Return 1
     return 1;
 }

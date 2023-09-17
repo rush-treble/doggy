@@ -7,8 +7,6 @@ import bindbc.sdl;
 void main()
 {
     doggy.init();
-    doggy.window.create("Doggy Demo", 800, 600);
-    doggy.render.create();
 
     bool quit = false;
     while (!quit) {
