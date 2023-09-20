@@ -47,7 +47,7 @@ int init()
     }
 
     window.create("Doggy: An Engine", 800, 600);
-    render.create();
+    render.init();
 
     // Success! Return 1
     return 1;
