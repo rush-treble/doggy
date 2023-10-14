@@ -7,6 +7,8 @@ import bindbc.sdl;
 void main()
 {
     doggy.init();
+    doggy.window.set_title("Demo");
+    doggy.window.set_size(300, 300);
 
     bool quit = false;
     while (!quit) {
