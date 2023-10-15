@@ -25,12 +25,12 @@ void main()
         }
 
         // clear screen
-        doggy.draw.set_color(0, 0, 0, 0);
-        doggy.draw.clear();
+        doggy.render.set_color(0, 0, 0, 0);
+        doggy.render.clear();
 
         // draw rectangle
-        doggy.draw.set_color(255, 0, 0, 255);
-        doggy.draw.rectangle(0, 0, 50, 50);
+        doggy.render.set_color(255, 0, 0, 255);
+        doggy.render.draw_rectangle(0, 0, 50, 50);
 
         doggy.render.present();
 

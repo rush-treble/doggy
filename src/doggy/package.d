@@ -5,7 +5,6 @@ public import doggy.error;
 public static import window = doggy.window;
 public static import console = doggy.console;
 public static import render = doggy.render;
-public static import draw = doggy.draw;
 public import doggy.message_box;
 
 import bindbc.sdl;
